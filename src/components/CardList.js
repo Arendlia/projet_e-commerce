@@ -1,6 +1,6 @@
 import Card from "./Card";
 
-import "./../styles/CardList.scss";
+
 import axios from "axios";
 import { useState, useEffect } from "react";
 
