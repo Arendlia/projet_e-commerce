@@ -1,9 +1,9 @@
 .card-group {
-  max-width: 980px;
+  max-width: auto;
   width: 80%;
   margin: 0 auto;
 
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(233px, 1fr));
+  grid-template-columns: repeat(3, minmax(400px, 1fr)); 
   gap: 1rem;
 }
