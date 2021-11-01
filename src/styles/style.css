@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Manrope&family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 html {
@@ -158,41 +159,56 @@ img {
   opacity: 1;
 }
 
-.header {
+header {
   padding: 3rem 1rem;
   text-align: center;
+  background-image: url("../assets/savernake-knives-RBTAoTZxf3Q-unsplash.jpg");
 }
-.header h1 {
-  margin-bottom: 0.5rem;
-  line-height: 1.2;
-  font-weight: 500;
-  font-size: 1.5rem;
-  color: #f1f1f1;
+header .container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
-.header__logo img {
-  max-width: 100%;
-  height: auto;
+header .container ul {
+  display: flex;
 }
-.header .specs-logo {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(4, minmax(2rem, 4rem));
+header .container ul li {
+  margin-left: 2rem;
+}
+header__quote {
+  color: grey;
+  width: 60%;
+  margin: auto;
+}
+header__quote h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 3.3rem;
+}
+header__quote button {
+  outline: none;
+  border: none;
+  color: grey;
+  background-color: transparent;
+  background-color: none;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  position: relative;
+}
+header__quote button::before {
+  content: "→";
+  display: flex;
+  position: absolute;
   justify-content: center;
-}
-.header .specs-logo svg {
-  max-width: 100%;
-}
-.header .specs-logo svg:nth-child(1) path {
-  fill: orangered;
-}
-.header .specs-logo svg:nth-child(2) path {
-  fill: blue;
-}
-.header .specs-logo svg:nth-child(3) path {
-  fill: yellow;
-}
-.header .specs-logo svg:nth-child(4) path {
-  fill: skyblue;
+  align-items: center;
+  width: 2.7rem;
+  height: 2.7rem;
+  border-radius: 50%;
+  background-color: #FBB03B;
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin-left: -2rem;
 }
 
 .footer {

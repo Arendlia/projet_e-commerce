@@ -1,40 +1,53 @@
-.header {
+header {
   padding: 3rem 1rem;
   text-align: center;
+  background-image: url("../assets/savernake-knives-RBTAoTZxf3Q-unsplash.jpg");
 
-  h1 {
-    margin-bottom: 0.5rem;
-    line-height: 1.2;
-    font-weight: 500;
-    font-size: 1.5rem;
-    color: #f1f1f1;
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+
+    justify-content: space-between;
+    ul {
+      display: flex;
+      li {
+        margin-left: 2rem;
+      }
+    }
   }
+  &__quote {
+    color: grey;
+    width: 60%;
+    margin: auto;
+    h1 {
+      font-family: $titlefont;
+      font-size: 3.3rem;
+    }
+    button {
+      outline: none;
+      border: none;
+      color: grey;
+      background-color: transparent;
+      background-color: none;
+      text-transform: uppercase;
+      font-size: 1.3rem;
+      position: relative;
 
-  &__logo img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .specs-logo {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(4, minmax(2rem, 4rem));
-    justify-content: center;
-
-    svg {
-      max-width: 100%;
-
-      &:nth-child(1) path {
-        fill: orangered;
-      }
-      &:nth-child(2) path {
-        fill: blue;
-      }
-      &:nth-child(3) path {
-        fill: yellow;
-      }
-      &:nth-child(4) path {
-        fill: skyblue;
+      &::before {
+        content: "\002192 ";
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        width: 2.7rem;
+        height: 2.7rem;
+        border-radius: 50%;
+        background-color: map-get($map: $colors, $key: "primary");
+        left: 0;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        margin-left: -2rem ;
       }
     }
   }
